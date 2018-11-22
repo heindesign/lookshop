@@ -5,7 +5,7 @@ var	cardList = document.querySelector('.catalog__list'),
 cardList.onclick = function(event) {
 	var target = event.target;
 	if (target.classList.contains('clothes__btn')) {	
-		var parentEl = target.parentNode;
+		var parentEl = target.parentNode,
 			price = parentEl.querySelector('.clothes__price'),
 			priceAttr = parseInt(price.getAttribute('data-price')),
 			basket = document.querySelector('.items-cost');
